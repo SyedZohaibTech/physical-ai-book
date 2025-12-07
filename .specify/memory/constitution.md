@@ -1,55 +1,64 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!--
+Sync Impact Report:
+Version change:  → 0.1.0
+List of modified principles:
+  - PROJECT_NAME: "[PROJECT_NAME]" → "Physical AI & Humanoid Robotics Textbook"
+  - PRINCIPLE_1_NAME: "[PRINCIPLE_1_NAME]" → "Academic Standard"
+  - PRINCIPLE_1_DESCRIPTION: "[PRINCIPLE_1_DESCRIPTION]" → "The content must be technically accurate, rigorous, and follow an academic, pedagogical structure suitable for a university-level course."
+  - PRINCIPLE_2_NAME: "[PRINCIPLE_2_NAME]" → "Docusaurus Integrity"
+  - PRINCIPLE_2_DESCRIPTION: "[PRINCIPLE_2_DESCRIPTION]" → "The output must strictly adhere to Docusaurus's file structure and Markdown/MDX syntax, including correct sidebar configuration and linking."
+  - PRINCIPLE_3_NAME: "[PRINCIPLE_3_NAME]" → "Illustrative Code"
+  - PRINCIPLE_3_DESCRIPTION: "[PRINCIPLE_3_DESCRIPTION]" → "All core technical concepts (ROS 2 communication, URDF structure) must be illustrated with complete and correct Python or XML code examples within code blocks."
+  - PRINCIPLE_4_NAME: "[PRINCIPLE_4_NAME]" → "Completeness"
+  - PRINCIPLE_4_DESCRIPTION: "[PRINCIPLE_4_DESCRIPTION]" → "The book must cover all 13 weeks of the course, from foundational ROS 2 to the final Capstone Project on Vision-Language-Action (VLA) systems."
+Removed sections:
+  - PRINCIPLE_5_NAME and DESCRIPTION
+  - PRINCIPLE_6_NAME and DESCRIPTION
+Added sections:
+  - Additional Constraints (TODO)
+  - Development Workflow (TODO)
+  - Governance Rules (filled with default text)
+Templates requiring updates: ⚠ All templates in `.specify/templates/` need to be checked for alignment with the new principles and sections.
+Follow-up TODOs:
+  - RATIFICATION_DATE
+  - ADDITIONAL_CONSTRAINTS
+  - DEVELOPMENT_WORKFLOW
+-->
+# Physical AI & Humanoid Robotics Textbook Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### Academic Standard
+The content must be technically accurate, rigorous, and follow an academic, pedagogical structure suitable for a university-level course.
 
-### [PRINCIPLE_2_NAME]
+### Docusaurus Integrity
 <!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+The output must strictly adhere to Docusaurus's file structure and Markdown/MDX syntax, including correct sidebar configuration and linking.
 
-### [PRINCIPLE_3_NAME]
+### Illustrative Code
 <!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+All core technical concepts (ROS 2 communication, URDF structure) must be illustrated with complete and correct Python or XML code examples within code blocks.
 
-### [PRINCIPLE_4_NAME]
+### Completeness
 <!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
-
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
-
-### [PRINCIPLE_6_NAME]
+The book must cover all 13 weeks of the course, from foundational ROS 2 to the final Capstone Project on Vision-Language-Action (VLA) systems.
 
 
-[PRINCIPLE__DESCRIPTION]
 
-## [SECTION_2_NAME]
+## Additional Constraints
 <!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+TODO(ADDITIONAL_CONSTRAINTS): Define any additional constraints or requirements for the project.
 
-## [SECTION_3_NAME]
+## Development Workflow
 <!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
 
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+TODO(DEVELOPMENT_WORKFLOW): Document the development workflow, review process, and quality gates.
 
 ## Governance
 <!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+This constitution outlines the fundamental principles and guidelines governing the "Physical AI & Humanoid Robotics Textbook" project. It supersedes all other conflicting practices or documents. Amendments to this constitution require a formal documentation process, approval from relevant stakeholders, and a clear migration plan for any affected components. All pull requests and code reviews must verify compliance with these principles.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
+**Version**: 0.1.0 | **Ratified**: TODO(RATIFICATION_DATE) | **Last Amended**: 2025-12-07
 <!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
