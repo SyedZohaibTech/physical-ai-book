@@ -62,9 +62,9 @@
 **Independent Test**: Run `npm run start` in the `website` directory. Open `http://localhost:3000` and verify that all modules and chapters are visible in the sidebar and are clickable, leading to an empty page with the correct title.
 
 ### Implementation for User Story 1
-- [ ] T034 [US1] Update the Docusaurus homepage at `website/src/pages/index.tsx` to reflect the textbook's title and overview.
-- [ ] T035 [US1] Configure the sidebar in `website/sidebars.ts` to create a hierarchical navigation menu for all modules and chapters created in Phase 2.
-- [ ] T036 [US1] Populate the `website/docs/intro.md` file with a brief introduction to the book.
+- [x] T034 [US1] Update the Docusaurus homepage at `website/src/pages/index.tsx` to reflect the textbook's title and overview.
+- [x] T035 [US1] Configure the sidebar in `website/sidebars.ts` to create a hierarchical navigation menu for all modules and chapters created in Phase 2.
+- [x] T036 [US1] Populate the `website/docs/intro.md` file with a brief introduction to the book.
 
 **Checkpoint**: User Story 1 is now fully functional and independently testable. The textbook exists as a navigable skeleton.
 
@@ -76,37 +76,37 @@
 **Independent Test**: For each task below, view the generated page in the Docusaurus site and confirm the content is well-structured, student-friendly, and contains all required elements (text, code, diagrams).
 
 ### Implementation for User Story 2 (Module 1)
-- [ ] T037 [P] [US2] Write content for `website/docs/module-1-ros2/1-intro-to-ros2.md`.
-- [ ] T038 [P] [US2] Write content for `website/docs/module-1-ros2/2-nodes-topics-services.md`.
-- [ ] T039 [P] [US2] Write content for `website/docs/module-1-ros2/3-rclpy-for-control.md`.
-- [ ] T040 [P] [US2] Write content for `website/docs/module-1-ros2/4-humanoid-urdf-models.md`.
-- [ ] T041 [P] [US2] Write content for `website/docs/module-1-ros2/5-ai-agents-to-controllers.md`.
-- [ ] T042 [P] [US2] Write content and examples for `website/docs/module-1-ros2/6-exercises.md`.
+- [x] T037 [P] [US2] Write content for `website/docs/module-1-ros2/1-intro-to-ros2.md`.
+- [x] T038 [P] [US2] Write content for `website/docs/module-1-ros2/2-nodes-topics-services.md`.
+- [x] T039 [P] [US2] Write content for `website/docs/module-1-ros2/3-rclpy-for-control.md`.
+- [x] T040 [P] [US2] Write content for `website/docs/module-1-ros2/4-humanoid-urdf-models.md`.
+- [x] T041 [P] [US2] Write content for `website/docs/module-1-ros2/5-ai-agents-to-controllers.md`.
+- [x] T042 [P] [US2] Write content and examples for `website/docs/module-1-ros2/6-exercises.md`.
 
 ### Implementation for User Story 2 (Module 2)
-- [ ] T043 [P] [US2] Write content for `website/docs/module-2-digital-twin/1-what-is-a-digital-twin.md`.
-- [ ] T044 [P] [US2] Write content for `website/docs/module-2-digital-twin/2-gazebo-physics.md`.
-- [ ] T045 [P] [US2] Write content for `website/docs/module-2-digital-twin/3-unity-for-hri.md`.
-- [ ] T046 [P] [US2] Write content for `website/docs/module-2-digital-twin/4-sensor-simulation.md`.
-- [ ] T047 [P] [US2] Write content for `website/docs/module-2-digital-twin/5-complete-humanoid-simulation.md`.
-- [ ] T048 [P] [US2] Write content and examples for `website/docs/module-2-digital-twin/6-exercises.md`.
+- [x] T043 [P] [US2] Write content for `website/docs/module-2-digital-twin/1-what-is-a-digital-twin.md`.
+- [x] T044 [P] [US2] Write content for `website/docs/module-2-digital-twin/2-gazebo-physics.md`.
+- [x] T045 [P] [US2] Write content for `website/docs/module-2-digital-twin/3-unity-for-hri.md`.
+- [x] T046 [P] [US2] Write content for `website/docs/module-2-digital-twin/4-sensor-simulation.md`.
+- [x] T047 [P] [US2] Write content for `website/docs/module-2-digital-twin/5-complete-humanoid-simulation.md`.
+- [x] T048 [P] [US2] Write content and examples for `website/docs/module-2-digital-twin/6-exercises.md`.
 
 ### Implementation for User Story 2 (Module 3)
-- [ ] T049 [P] [US2] Write content for `website/docs/module-3-isaac/1-intro-to-isaac.md`.
-- [ ] T050 [P] [US2] Write content for `website/docs/module-3-isaac/2-isaac-sim-photorealism.md`.
-- [ ] T051 [P] [US2] Write content for `website/docs/module-3-isaac/3-isaac-ros-perception.md`.
-- [ ] T052 [P] [US2] Write content for `website/docs/module-3-isaac/4-vslam-and-depth.md`.
+- [x] T049 [P] [US2] Write content for `website/docs/module-3-isaac/1-intro-to-isaac.md`.
+- [x] T050 [P] [US2] Write content for `website/docs/module-3-isaac/2-isaac-sim-photorealism.md`.
+- [x] T051 [P] [US2] Write content for `website/docs/module-3-isaac/3-isaac-ros-perception.md`.
+- [x] T052 [P] [US2] Write content for `website/docs/module-3-isaac/4-vslam-and-depth.md`.
 - [ ] T053 [P] [US2] Write content for `website/docs/module-3-isaac/5-nav2-path-planning.md`.
-- [ ] T054 [P] [US2] Write content for `website/docs/module-3-isaac/6-ai-controlled-humanoid-brain.md`.
-- [ ] T055 [P] [US2] Write content and examples for `website/docs/module-3-isaac/7-exercises.md`.
+- [x] T054 [P] [US2] Write content for `website/docs/module-3-isaac/6-ai-controlled-humanoid-brain.md`.
+- [x] T055 [P] [US2] Write content and examples for `website/docs/module-3-isaac/7-exercises.md`.
 
 ### Implementation for User Story 2 (Module 4)
-- [ ] T056 [P] [US2] Write content for `website/docs/module-4-vla/1-vla-future-of-robotics.md`.
-- [ ] T057 [P] [US2] Write content for `website/docs/module-4-vla/2-whisper-voice-commands.md`.
-- [ ] T058 [P] [US2] Write content for `website/docs/module-4-vla/3-llm-to-ros-actions.md`.
-- [ ] T059 [P] [US2] Write content for `website/docs/module-4-vla/4-cognitive-planning-pipelines.md`.
-- [ ] T060 [P] [US2] Write content for `website/docs/module-4-vla/5-integrating-vla.md`.
-- [ ] T061 [P] [US2] Write content and examples for `website/docs/module-4-vla/6-exercises.md`.
+- [x] T056 [P] [US2] Write content for `website/docs/module-4-vla/1-vla-future-of-robotics.md`.
+- [x] T057 [P] [US2] Write content for `website/docs/module-4-vla/2-whisper-voice-commands.md`.
+- [x] T058 [P] [US2] Write content for `website/docs/module-4-vla/3-llm-to-ros-actions.md`.
+- [x] T059 [P] [US2] Write content for `website/docs/module-4-vla/4-cognitive-planning-pipelines.md`.
+- [x] T060 [P] [US2] Write content for `website/docs/module-4-vla/5-integrating-vla.md`.
+- [x] T061 [P] [US2] Write content and examples for `website/docs/module-4-vla/6-exercises.md`.
 
 **Checkpoint**: User Story 2 is now complete. All chapters and exercises are populated with content.
 
@@ -118,11 +118,11 @@
 **Independent Test**: Follow the generated documentation from start to finish. The final simulation should run and perform the voice-activated "pick and place" task successfully.
 
 ### Implementation for User Story 3
-- [ ] T062 [US3] Write the full project walkthrough in `website/docs/capstone-project/1-project-walkthrough.md`.
-- [ ] T063 [US3] Create architecture diagrams (using Mermaid.js) within the walkthrough.
-- [ ] T064 [US3] Develop the ROS 2 packages and code for the capstone in `examples/capstone-project/`.
-- [ ] T065 [P] [US3] Create the simulation setup guide for Isaac Sim or Gazebo.
-- [ ] T066 [P] [US3] Write the evaluation rubric for the project.
+- [x] T062 [US3] Write the full project walkthrough in `website/docs/capstone-project/1-project-walkthrough.md`.
+- [x] T063 [US3] Create architecture diagrams (using Mermaid.js) within the walkthrough.
+- [x] T064 [US3] Develop the ROS 2 packages and code for the capstone in `examples/capstone-project/`.
+- [x] T065 [P] [US3] Create the simulation setup guide for Isaac Sim or Gazebo.
+- [x] T066 [P] [US3] Write the evaluation rubric for the project.
 
 **Checkpoint**: User Story 3 is now complete. The capstone project is fully documented and the example code is available.
 
@@ -131,9 +131,9 @@
 ## Phase 6: Polish & Cross-Cutting Concerns
 
 **Purpose**: Add supplementary materials and perform final quality checks.
-- [ ] T067 [P] Create a Glossary of terms and add it to the Docusaurus site.
-- [ ] T068 [P] Create an Appendix with quick-reference guides.
-- [ ] T069 [P] Review and format all generated code examples in the `examples/` directory.
+- [x] T067 [P] Create a Glossary of terms and add it to the Docusaurus site.
+- [x] T068 [P] Create an Appendix with quick-reference guides.
+- [x] T069 [P] Review and format all generated code examples in the `examples/` directory.
 - [ ] T070 Run a full Docusaurus site build (`npm run build` in `website/`) to check for broken links or formatting issues.
 
 ---
