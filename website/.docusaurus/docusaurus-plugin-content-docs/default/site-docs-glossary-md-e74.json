@@ -1,0 +1,28 @@
+{
+  "id": "glossary",
+  "title": "Glossary",
+  "description": "This glossary provides definitions for key terms and acronyms used throughout the \"Physical AI & Humanoid Robotics\" textbook.",
+  "source": "@site/docs/glossary.md",
+  "sourceDirName": ".",
+  "slug": "/glossary",
+  "permalink": "/physical-ai-book/docs/glossary",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/physical-ai-book/physical-ai-book/tree/main/docs/glossary.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 100,
+  "frontMatter": {
+    "title": "Glossary",
+    "sidebar_position": 100
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Project Walkthrough",
+    "permalink": "/physical-ai-book/docs/capstone-project/project-walkthrough"
+  },
+  "next": {
+    "title": "Appendix",
+    "permalink": "/physical-ai-book/docs/appendix"
+  }
+}

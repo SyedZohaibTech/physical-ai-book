@@ -1,0 +1,29 @@
+{
+  "id": "module-1-ros2/nodes-topics-services",
+  "title": "2. Nodes, Topics, Services, & Actions",
+  "description": "In the last chapter, we introduced the ROS graph as a network of independent programs. Now, let's break down the four fundamental concepts that make this graph work: Nodes, Topics, Services, and Actions.",
+  "source": "@site/docs/module-1-ros2/2-nodes-topics-services.md",
+  "sourceDirName": "module-1-ros2",
+  "slug": "/module-1-ros2/nodes-topics-services",
+  "permalink": "/physical-ai-book/docs/module-1-ros2/nodes-topics-services",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/physical-ai-book/physical-ai-book/tree/main/docs/module-1-ros2/2-nodes-topics-services.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "2. Nodes, Topics, Services, & Actions",
+    "sidebar_label": "Nodes, Topics, Services",
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Introduction to ROS 2",
+    "permalink": "/physical-ai-book/docs/module-1-ros2/intro-to-ros2"
+  },
+  "next": {
+    "title": "Controlling with rclpy",
+    "permalink": "/physical-ai-book/docs/module-1-ros2/rclpy-for-control"
+  }
+}

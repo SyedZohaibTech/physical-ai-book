@@ -1,0 +1,29 @@
+{
+  "id": "module-4-vla/vla-future-of-robotics",
+  "title": "1. VLA: The Future of Robotics",
+  "description": "So far, our robot has a nervous system (ROS 2), a physical body (URDF), a simulated world (Gazebo/Isaac Sim), and a brain that perceives its environment and plans paths (Isaac ROS/Nav2). What's missing? The ability to understand and execute high-level, human-like commands.",
+  "source": "@site/docs/module-4-vla/1-vla-future-of-robotics.md",
+  "sourceDirName": "module-4-vla",
+  "slug": "/module-4-vla/vla-future-of-robotics",
+  "permalink": "/physical-ai-book/docs/module-4-vla/vla-future-of-robotics",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/physical-ai-book/physical-ai-book/tree/main/docs/module-4-vla/1-vla-future-of-robotics.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "1. VLA: The Future of Robotics",
+    "sidebar_label": "VLA Future of Robotics",
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Exercises",
+    "permalink": "/physical-ai-book/docs/module-3-isaac/exercises"
+  },
+  "next": {
+    "title": "Whisper Voice Commands",
+    "permalink": "/physical-ai-book/docs/module-4-vla/whisper-voice-commands"
+  }
+}

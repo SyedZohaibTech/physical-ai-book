@@ -1,0 +1,29 @@
+{
+  "id": "module-2-digital-twin/unity-for-hri",
+  "title": "3. High-Fidelity Rendering with Unity",
+  "description": "Gazebo is a fantastic tool for simulating physics, but its graphics are relatively simple. For many cutting-edge robotics applications, visual realism is not just a \"nice-to-have\"—it's a necessity. This is where game engines like Unity come in.",
+  "source": "@site/docs/module-2-digital-twin/3-unity-for-hri.md",
+  "sourceDirName": "module-2-digital-twin",
+  "slug": "/module-2-digital-twin/unity-for-hri",
+  "permalink": "/physical-ai-book/docs/module-2-digital-twin/unity-for-hri",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/physical-ai-book/physical-ai-book/tree/main/docs/module-2-digital-twin/3-unity-for-hri.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "3. High-Fidelity Rendering with Unity",
+    "sidebar_label": "Unity for HRI",
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Gazebo Physics",
+    "permalink": "/physical-ai-book/docs/module-2-digital-twin/gazebo-physics"
+  },
+  "next": {
+    "title": "Sensor Simulation",
+    "permalink": "/physical-ai-book/docs/module-2-digital-twin/sensor-simulation"
+  }
+}

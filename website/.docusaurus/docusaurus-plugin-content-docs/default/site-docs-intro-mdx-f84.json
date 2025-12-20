@@ -1,0 +1,20 @@
+{
+  "id": "intro",
+  "title": "Introduction",
+  "description": "Welcome to the frontier of artificial intelligence and robotics. This open-source textbook is your guide to building intelligent humanoid robots that can perceive, understand, and interact with the complex physical world. As we stand on the cusp of a new era in robotics, the ability to bridge the gap between AI algorithms and physical embodiment has never been more critical.",
+  "source": "@site/docs/intro.mdx",
+  "sourceDirName": ".",
+  "slug": "/intro",
+  "permalink": "/docs/intro",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/docs/intro.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "title": "Introduction"
+  },
+  "sidebar": "tutorialSidebar"
+}

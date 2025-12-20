@@ -1,0 +1,29 @@
+{
+  "id": "module-4-vla/exercises",
+  "title": "6. Module 4 Exercises",
+  "description": "These exercises will challenge you to build and integrate the Vision-Language-Action (VLA) pipeline components we've discussed.",
+  "source": "@site/docs/module-4-vla/6-exercises.md",
+  "sourceDirName": "module-4-vla",
+  "slug": "/module-4-vla/exercises",
+  "permalink": "/physical-ai-book/docs/module-4-vla/exercises",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/physical-ai-book/physical-ai-book/tree/main/docs/module-4-vla/6-exercises.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "title": "6. Module 4 Exercises",
+    "sidebar_label": "Exercises",
+    "sidebar_position": 6
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Integrating VLA",
+    "permalink": "/physical-ai-book/docs/module-4-vla/integrating-vla"
+  },
+  "next": {
+    "title": "Project Walkthrough",
+    "permalink": "/physical-ai-book/docs/capstone-project/project-walkthrough"
+  }
+}

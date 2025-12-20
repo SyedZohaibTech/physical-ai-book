@@ -1,0 +1,29 @@
+{
+  "id": "module-2-digital-twin/sensor-simulation",
+  "title": "4. Simulating Sensors",
+  "description": "A robot is blind and deaf without its sensors. A critical function of a digital twin is to generate realistic sensor data that our perception and navigation algorithms can consume. In this chapter, we'll explore how to add and configure common robotic sensors in our simulators.",
+  "source": "@site/docs/module-2-digital-twin/4-sensor-simulation.md",
+  "sourceDirName": "module-2-digital-twin",
+  "slug": "/module-2-digital-twin/sensor-simulation",
+  "permalink": "/physical-ai-book/docs/module-2-digital-twin/sensor-simulation",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/physical-ai-book/physical-ai-book/tree/main/docs/module-2-digital-twin/4-sensor-simulation.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "4. Simulating Sensors",
+    "sidebar_label": "Sensor Simulation",
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Unity for HRI",
+    "permalink": "/physical-ai-book/docs/module-2-digital-twin/unity-for-hri"
+  },
+  "next": {
+    "title": "Complete Humanoid Simulation",
+    "permalink": "/physical-ai-book/docs/module-2-digital-twin/complete-humanoid-simulation"
+  }
+}

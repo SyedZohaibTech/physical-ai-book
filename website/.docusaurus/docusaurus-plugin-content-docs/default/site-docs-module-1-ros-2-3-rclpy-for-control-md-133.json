@@ -1,0 +1,29 @@
+{
+  "id": "module-1-ros2/rclpy-for-control",
+  "title": "3. Writing Your First ROS 2 Node with rclpy",
+  "description": "Theory is great, but robotics is all about building things that work. In this chapter, we'll write our first ROS 2 nodes using rclpy, the official Python client library for ROS 2. We'll create a classic \"talker\" (publisher) and \"listener\" (subscriber) to see topics in action.",
+  "source": "@site/docs/module-1-ros2/3-rclpy-for-control.md",
+  "sourceDirName": "module-1-ros2",
+  "slug": "/module-1-ros2/rclpy-for-control",
+  "permalink": "/physical-ai-book/docs/module-1-ros2/rclpy-for-control",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/physical-ai-book/physical-ai-book/tree/main/docs/module-1-ros2/3-rclpy-for-control.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "3. Writing Your First ROS 2 Node with rclpy",
+    "sidebar_label": "Controlling with rclpy",
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Nodes, Topics, Services",
+    "permalink": "/physical-ai-book/docs/module-1-ros2/nodes-topics-services"
+  },
+  "next": {
+    "title": "Humanoid URDF Models",
+    "permalink": "/physical-ai-book/docs/module-1-ros2/humanoid-urdf-models"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "module-4-vla/whisper-voice-commands",
+  "title": "2. Voice Commands with OpenAI Whisper",
+  "description": "The first step in any Vision-Language-Action (VLA) pipeline is often to convert human input into a format the robot can understand. For spoken commands, this means speech-to-text. In this chapter, we'll integrate OpenAI's powerful Whisper model into our ROS 2 system to enable our robot to understand voice commands.",
+  "source": "@site/docs/module-4-vla/2-whisper-voice-commands.md",
+  "sourceDirName": "module-4-vla",
+  "slug": "/module-4-vla/whisper-voice-commands",
+  "permalink": "/physical-ai-book/docs/module-4-vla/whisper-voice-commands",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/physical-ai-book/physical-ai-book/tree/main/docs/module-4-vla/2-whisper-voice-commands.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "2. Voice Commands with OpenAI Whisper",
+    "sidebar_label": "Whisper Voice Commands",
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "VLA Future of Robotics",
+    "permalink": "/physical-ai-book/docs/module-4-vla/vla-future-of-robotics"
+  },
+  "next": {
+    "title": "LLM to ROS Actions",
+    "permalink": "/physical-ai-book/docs/module-4-vla/llm-to-ros-actions"
+  }
+}

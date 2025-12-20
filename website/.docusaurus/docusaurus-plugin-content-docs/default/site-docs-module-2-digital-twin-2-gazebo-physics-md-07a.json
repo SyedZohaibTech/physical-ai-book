@@ -1,0 +1,29 @@
+{
+  "id": "module-2-digital-twin/gazebo-physics",
+  "title": "2. Simulating Physics with Gazebo",
+  "description": "In the last chapter, we defined a Digital Twin as a physics-based simulation of our robot. Now, let's get our hands dirty with the tool that provides that physics: Gazebo.",
+  "source": "@site/docs/module-2-digital-twin/2-gazebo-physics.md",
+  "sourceDirName": "module-2-digital-twin",
+  "slug": "/module-2-digital-twin/gazebo-physics",
+  "permalink": "/physical-ai-book/docs/module-2-digital-twin/gazebo-physics",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/physical-ai-book/physical-ai-book/tree/main/docs/module-2-digital-twin/2-gazebo-physics.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "2. Simulating Physics with Gazebo",
+    "sidebar_label": "Gazebo Physics",
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "What is a Digital Twin?",
+    "permalink": "/physical-ai-book/docs/module-2-digital-twin/what-is-a-digital-twin"
+  },
+  "next": {
+    "title": "Unity for HRI",
+    "permalink": "/physical-ai-book/docs/module-2-digital-twin/unity-for-hri"
+  }
+}

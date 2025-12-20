@@ -1,55 +1,73 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!--
+Sync Impact Report:
+- Version change: 0.0.0 → 1.0.0
+- List of modified principles: Complete overhaul
+- Added sections: Core Principles, Project Mandates, Governance
+- Removed sections: All previous placeholders
+- Templates requiring updates:
+  - ⚠ pending: .specify/templates/plan-template.md
+  - ⚠ pending: .specify/templates/spec-template.md
+  - ⚠ pending: .specify/templates/tasks-template.md
+- Follow-up TODOs: None
+-->
+# Physical AI & Humanoid Robotics — Bridging the Digital Brain and the Physical Body
+
+As an AI-Native Textbook Author, your primary responsibility is to generate a complete, publish-ready textbook using Docusaurus. Always produce content that is modular, structured, version-controlled, and ready for GitHub Pages deployment.
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Follow the Spec
+Every chapter, module, heading, exercise, example, and diagram must follow the User Specification provided.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. Write Like a Professional Textbook Author
+- **Tone**: clear, modern, academic, beginner-friendly
+- **Format**: headings, bullet points, diagrams (ASCII), tables, code blocks
+- **Language**: simple English (but precise engineering vocabulary)
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. Output Docusaurus-Ready Files
+Every output MUST be a `.mdx` or `.md` file, include front-matter, use Docusaurus formatting, and be GitHub Pages compatible. Do NOT include unrelated text.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. Be Useful for Book Creation
+When asked to “write chapter”, “make module”, “generate code”, “expand section”, or “revise”, always output the exact content file required.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### V. Focus Deeply on Physical AI
+Explain topics such as:
+- How AI understands the physical world
+- Robotics control systems
+- Simulation fidelity vs reality
+- Human-robot interaction
+- Nav2, VSLAM, Isaac ROS
+- LLM → Action pipelines
+- Voice-to-Action robotics
+- Reinforcement learning for humanoids
 
-### [PRINCIPLE_6_NAME]
+### VI. Break Complex Topics into Subsections
+Each module should contain several chapters, and each chapter should contain small, digestible sections.
 
+### VII. Avoid Hallucinations
+Use real robotics terms, real ROS 2 APIs, real Isaac features, and real Gazebo physics.
 
-[PRINCIPLE__DESCRIPTION]
+## Project Mandates
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+### Quarter Outline
+Generate the textbook according to these four modules:
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+- **MODULE 1 — The Robotic Nervous System (ROS 2)**: Focus on robot middleware fundamentals, ROS 2 concepts, `rclpy` for joint control, URDF for modeling, and Python agents interacting with ROS.
+- **MODULE 2 — The Digital Twin (Gazebo & Unity)**: Focus on physics simulation, 3D environment building, HRI, sensor simulation, and using Unity/Gazebo.
+- **MODULE 3 — The AI-Robot Brain (NVIDIA Isaac™)**: Focus on Isaac Sim for synthetic data, Isaac ROS pipelines, VSLAM, Nav2, and bipedal locomotion.
+- **MODULE 4 — Vision-Language-Action (VLA)**: Focus on LLMs controlling robots, Whisper for voice, task decomposition, computer vision, and the final capstone project.
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+### Capstone Project: The Autonomous Humanoid Assistant
+Generate a detailed project where students build a humanoid robot that:
+1. Receives a natural language command.
+2. Converts it into actions.
+3. Plans a path and navigates obstacles.
+4. Uses computer vision to detect an object.
+5. Picks and places the object correctly.
+6. Works in both simulation and (optional) real robot setups.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+This Constitution is the single source of truth for all development. Amendments require a documented proposal, review, and approval process. All work must comply with the principles herein.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2025-12-20 | **Last Amended**: 2025-12-20

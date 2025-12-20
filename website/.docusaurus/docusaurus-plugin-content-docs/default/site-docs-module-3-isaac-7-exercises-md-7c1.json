@@ -1,0 +1,29 @@
+{
+  "id": "module-3-isaac/exercises",
+  "title": "7. Module 3 Exercises",
+  "description": "The concepts in this module are best understood by working directly with the software. These exercises will guide you through using Isaac Sim and the Isaac ROS GEMs. You will need a computer with a compatible NVIDIA GPU and a full installation of Isaac Sim and Isaac ROS.",
+  "source": "@site/docs/module-3-isaac/7-exercises.md",
+  "sourceDirName": "module-3-isaac",
+  "slug": "/module-3-isaac/exercises",
+  "permalink": "/physical-ai-book/docs/module-3-isaac/exercises",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/physical-ai-book/physical-ai-book/tree/main/docs/module-3-isaac/7-exercises.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "title": "7. Module 3 Exercises",
+    "sidebar_label": "Exercises",
+    "sidebar_position": 7
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "AI-Controlled Humanoid Brain",
+    "permalink": "/physical-ai-book/docs/module-3-isaac/ai-controlled-humanoid-brain"
+  },
+  "next": {
+    "title": "VLA Future of Robotics",
+    "permalink": "/physical-ai-book/docs/module-4-vla/vla-future-of-robotics"
+  }
+}

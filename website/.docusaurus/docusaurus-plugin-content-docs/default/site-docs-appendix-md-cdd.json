@@ -1,0 +1,24 @@
+{
+  "id": "appendix",
+  "title": "Appendix",
+  "description": "This appendix provides quick reference guides and supplementary information to assist you in your robotics development journey.",
+  "source": "@site/docs/appendix.md",
+  "sourceDirName": ".",
+  "slug": "/appendix",
+  "permalink": "/physical-ai-book/docs/appendix",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/physical-ai-book/physical-ai-book/tree/main/docs/appendix.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 101,
+  "frontMatter": {
+    "title": "Appendix",
+    "sidebar_position": 101
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Glossary",
+    "permalink": "/physical-ai-book/docs/glossary"
+  }
+}

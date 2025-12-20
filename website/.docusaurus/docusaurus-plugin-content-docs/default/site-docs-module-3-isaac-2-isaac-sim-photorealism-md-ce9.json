@@ -1,0 +1,29 @@
+{
+  "id": "module-3-isaac/isaac-sim-photorealism",
+  "title": "2. Isaac Sim and Photorealistic Rendering",
+  "description": "NVIDIA's Isaac Sim is not just another robotics simulator; it's a platform built for the age of AI. Its core strength lies in its ability to generate physically-based, photorealistic sensor data. This is a game-changer for training and testing the AI models that power modern robots.",
+  "source": "@site/docs/module-3-isaac/2-isaac-sim-photorealism.md",
+  "sourceDirName": "module-3-isaac",
+  "slug": "/module-3-isaac/isaac-sim-photorealism",
+  "permalink": "/physical-ai-book/docs/module-3-isaac/isaac-sim-photorealism",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/physical-ai-book/physical-ai-book/tree/main/docs/module-3-isaac/2-isaac-sim-photorealism.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "2. Isaac Sim and Photorealistic Rendering",
+    "sidebar_label": "Isaac Sim Photorealism",
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Intro to Isaac",
+    "permalink": "/physical-ai-book/docs/module-3-isaac/intro-to-isaac"
+  },
+  "next": {
+    "title": "Isaac ROS Perception",
+    "permalink": "/physical-ai-book/docs/module-3-isaac/isaac-ros-perception"
+  }
+}

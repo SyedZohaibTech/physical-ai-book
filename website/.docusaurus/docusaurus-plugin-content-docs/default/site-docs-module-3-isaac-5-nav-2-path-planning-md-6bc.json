@@ -1,0 +1,29 @@
+{
+  "id": "module-3-isaac/nav2-path-planning",
+  "title": "5. Autonomous Navigation with Nav2",
+  "description": "We have given our robot the ability to \"see\" and \"locate\" itself in a map. The next logical step is to give it the ability to move from point A to point B on its own. This is the domain of navigation, and in ROS 2, the industry-standard solution is the Navigation2 stack, or Nav2.",
+  "source": "@site/docs/module-3-isaac/5-nav2-path-planning.md",
+  "sourceDirName": "module-3-isaac",
+  "slug": "/module-3-isaac/nav2-path-planning",
+  "permalink": "/physical-ai-book/docs/module-3-isaac/nav2-path-planning",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/physical-ai-book/physical-ai-book/tree/main/docs/module-3-isaac/5-nav2-path-planning.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "title": "5. Autonomous Navigation with Nav2",
+    "sidebar_label": "Nav2 Path Planning",
+    "sidebar_position": 5
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "VSLAM and Depth",
+    "permalink": "/physical-ai-book/docs/module-3-isaac/vslam-and-depth"
+  },
+  "next": {
+    "title": "AI-Controlled Humanoid Brain",
+    "permalink": "/physical-ai-book/docs/module-3-isaac/ai-controlled-humanoid-brain"
+  }
+}
