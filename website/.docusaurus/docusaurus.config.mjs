@@ -4,25 +4,42 @@
  * Modify the docusaurus.config.js file at your site's root instead.
  */
 export default {
-  "title": "My Site",
-  "tagline": "Dinosaurs are cool",
-  "url": "https://your-docusaurus-test-site.com",
+  "title": "Physical AI & Humanoid Robotics",
+  "tagline": "Master the Future of Embodied Intelligence",
+  "url": "https://your-username.github.io",
   "baseUrl": "/",
   "onBrokenLinks": "throw",
   "favicon": "img/favicon.ico",
-  "organizationName": "facebook",
-  "projectName": "docusaurus",
+  "organizationName": "your-username",
+  "projectName": "physical-ai-book",
+  "markdown": {
+    "mermaid": true,
+    "hooks": {
+      "onBrokenMarkdownLinks": "warn",
+      "onBrokenMarkdownImages": "throw"
+    },
+    "format": "mdx",
+    "emoji": true,
+    "mdx1Compat": {
+      "comments": true,
+      "admonitions": true,
+      "headingIds": true
+    },
+    "anchors": {
+      "maintainCase": false
+    }
+  },
   "presets": [
     [
       "@docusaurus/preset-classic",
       {
         "docs": {
           "sidebarPath": "C:\\Users\\Pcw\\physical-ai-book\\website\\sidebars.js",
-          "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/"
+          "routeBasePath": "docs",
+          "editUrl": "https://github.com/your-username/physical-ai-book/edit/main/"
         },
         "blog": {
-          "showReadingTime": true,
-          "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/blog/"
+          "showReadingTime": true
         },
         "theme": {
           "customCss": "C:\\Users\\Pcw\\physical-ai-book\\website\\src\\css\\custom.css"
@@ -32,9 +49,9 @@ export default {
   ],
   "themeConfig": {
     "navbar": {
-      "title": "My Site",
+      "title": "Physical AI & Robotics",
       "logo": {
-        "alt": "My Site Logo",
+        "alt": "Physical AI Logo",
         "src": "img/logo.svg"
       },
       "items": [
@@ -50,7 +67,7 @@ export default {
           "position": "left"
         },
         {
-          "href": "https://github.com/facebook/docusaurus",
+          "href": "https://github.com/your-username/physical-ai-book",
           "label": "GitHub",
           "position": "right"
         }
@@ -68,39 +85,9 @@ export default {
               "to": "/docs/intro"
             }
           ]
-        },
-        {
-          "title": "Community",
-          "items": [
-            {
-              "label": "Stack Overflow",
-              "href": "https://stackoverflow.com/questions/tagged/docusaurus"
-            },
-            {
-              "label": "Discord",
-              "href": "https://discordapp.com/invite/docusaurus"
-            },
-            {
-              "label": "Twitter",
-              "href": "https://twitter.com/docusaurus"
-            }
-          ]
-        },
-        {
-          "title": "More",
-          "items": [
-            {
-              "label": "Blog",
-              "to": "/blog"
-            },
-            {
-              "label": "GitHub",
-              "href": "https://github.com/facebook/docusaurus"
-            }
-          ]
         }
       ],
-      "copyright": "Copyright © 2025 My Project, Inc. Built with Docusaurus."
+      "copyright": "Copyright © 2025 Physical AI Textbook. Built with Docusaurus."
     },
     "prism": {
       "theme": {
@@ -372,22 +359,5 @@ export default {
   "stylesheets": [],
   "clientModules": [],
   "titleDelimiter": "|",
-  "noIndex": false,
-  "markdown": {
-    "format": "mdx",
-    "mermaid": false,
-    "emoji": true,
-    "mdx1Compat": {
-      "comments": true,
-      "admonitions": true,
-      "headingIds": true
-    },
-    "anchors": {
-      "maintainCase": false
-    },
-    "hooks": {
-      "onBrokenMarkdownLinks": "warn",
-      "onBrokenMarkdownImages": "throw"
-    }
-  }
+  "noIndex": false
 };

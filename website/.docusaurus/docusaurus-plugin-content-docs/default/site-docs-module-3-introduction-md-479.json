@@ -1,0 +1,28 @@
+{
+  "id": "module3/introduction",
+  "title": "Introduction to NVIDIA Isaac",
+  "description": "The NVIDIA Isaac platform represents a revolutionary approach to developing AI-powered robots. Combining high-performance computing hardware with sophisticated software frameworks, Isaac provides the tools needed to create intelligent, autonomous robots capable of complex perception, navigation, and manipulation tasks.",
+  "source": "@site/docs/module3/introduction.md",
+  "sourceDirName": "module3",
+  "slug": "/module3/introduction",
+  "permalink": "/docs/module3/introduction",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/your-username/physical-ai-book/edit/main/docs/module3/introduction.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "title": "Introduction to NVIDIA Isaac"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Sensor Simulation for Humanoid Robots",
+    "permalink": "/docs/module2/sensor-simulation"
+  },
+  "next": {
+    "title": "Isaac Sim for Humanoid Robotics",
+    "permalink": "/docs/module3/isaac-sim"
+  }
+}

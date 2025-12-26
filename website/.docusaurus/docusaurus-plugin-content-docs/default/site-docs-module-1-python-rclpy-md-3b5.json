@@ -1,0 +1,28 @@
+{
+  "id": "module1/python-rclpy",
+  "title": "Python Integration with rclpy",
+  "description": "The rclpy library is the Python client library for ROS 2, providing the Python API to interact with ROS 2 concepts like nodes, topics, services, parameters, and actions.",
+  "source": "@site/docs/module1/python-rclpy.md",
+  "sourceDirName": "module1",
+  "slug": "/module1/python-rclpy",
+  "permalink": "/docs/module1/python-rclpy",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/your-username/physical-ai-book/edit/main/docs/module1/python-rclpy.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4,
+    "title": "Python Integration with rclpy"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Nodes, Topics, and Services",
+    "permalink": "/docs/module1/nodes-topics-services"
+  },
+  "next": {
+    "title": "URDF for Humanoid Robots",
+    "permalink": "/docs/module1/urdf-humanoids"
+  }
+}

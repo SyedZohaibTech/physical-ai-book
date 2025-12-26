@@ -14,6 +14,101 @@
               "id": "intro",
               "path": "/docs/intro",
               "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module1/introduction",
+              "path": "/docs/module1/introduction",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module1/nodes-topics-services",
+              "path": "/docs/module1/nodes-topics-services",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module1/python-rclpy",
+              "path": "/docs/module1/python-rclpy",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module1/ros2-setup",
+              "path": "/docs/module1/ros2-setup",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module1/urdf-humanoids",
+              "path": "/docs/module1/urdf-humanoids",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module2/gazebo-environment",
+              "path": "/docs/module2/gazebo-environment",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module2/introduction",
+              "path": "/docs/module2/introduction",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module2/physics-simulation",
+              "path": "/docs/module2/physics-simulation",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module2/sensor-simulation",
+              "path": "/docs/module2/sensor-simulation",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module2/unity-rendering",
+              "path": "/docs/module2/unity-rendering",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module3/introduction",
+              "path": "/docs/module3/introduction",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module3/isaac-ros",
+              "path": "/docs/module3/isaac-ros",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module3/isaac-sim",
+              "path": "/docs/module3/isaac-sim",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module3/nav2-planning",
+              "path": "/docs/module3/nav2-planning",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module3/visual-slam",
+              "path": "/docs/module3/visual-slam",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module4/capstone-project",
+              "path": "/docs/module4/capstone-project",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module4/introduction",
+              "path": "/docs/module4/introduction",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module4/llm-planning",
+              "path": "/docs/module4/llm-planning",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module4/voice-to-action",
+              "path": "/docs/module4/voice-to-action",
+              "sidebar": "tutorialSidebar"
             }
           ],
           "draftIds": [],
@@ -21,7 +116,7 @@
             "tutorialSidebar": {
               "link": {
                 "path": "/docs/intro",
-                "label": "intro"
+                "label": "Introduction"
               }
             }
           }

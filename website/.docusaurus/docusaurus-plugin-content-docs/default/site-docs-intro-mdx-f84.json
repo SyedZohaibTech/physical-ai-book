@@ -8,7 +8,7 @@
   "permalink": "/docs/intro",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/facebook/docusaurus/edit/main/website/docs/intro.mdx",
+  "editUrl": "https://github.com/your-username/physical-ai-book/edit/main/docs/intro.mdx",
   "tags": [],
   "version": "current",
   "sidebarPosition": 1,
@@ -16,5 +16,9 @@
     "sidebar_position": 1,
     "title": "Introduction"
   },
-  "sidebar": "tutorialSidebar"
+  "sidebar": "tutorialSidebar",
+  "next": {
+    "title": "Introduction to ROS 2",
+    "permalink": "/docs/module1/introduction"
+  }
 }

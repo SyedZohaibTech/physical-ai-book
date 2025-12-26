@@ -1,0 +1,28 @@
+{
+  "id": "module2/unity-rendering",
+  "title": "Unity Rendering for Humanoid Perception",
+  "description": "Unity's advanced rendering capabilities provide high-fidelity visual simulation essential for humanoid robot perception systems. This chapter explores how to leverage Unity's rendering pipeline to create photorealistic environments that support computer vision and perception algorithm development.",
+  "source": "@site/docs/module2/unity-rendering.md",
+  "sourceDirName": "module2",
+  "slug": "/module2/unity-rendering",
+  "permalink": "/docs/module2/unity-rendering",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/your-username/physical-ai-book/edit/main/docs/module2/unity-rendering.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4,
+    "title": "Unity Rendering for Humanoid Perception"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Physics Simulation for Humanoid Robots",
+    "permalink": "/docs/module2/physics-simulation"
+  },
+  "next": {
+    "title": "Sensor Simulation for Humanoid Robots",
+    "permalink": "/docs/module2/sensor-simulation"
+  }
+}

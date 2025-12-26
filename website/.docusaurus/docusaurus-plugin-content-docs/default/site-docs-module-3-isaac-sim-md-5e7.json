@@ -1,0 +1,28 @@
+{
+  "id": "module3/isaac-sim",
+  "title": "Isaac Sim for Humanoid Robotics",
+  "description": "Isaac Sim is NVIDIA's high-fidelity simulation environment built on the Omniverse platform, specifically designed for robotics applications. It provides photorealistic rendering, accurate physics simulation, and seamless integration with the ROS/ROS 2 ecosystem, making it ideal for developing complex humanoid robots.",
+  "source": "@site/docs/module3/isaac-sim.md",
+  "sourceDirName": "module3",
+  "slug": "/module3/isaac-sim",
+  "permalink": "/docs/module3/isaac-sim",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/your-username/physical-ai-book/edit/main/docs/module3/isaac-sim.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2,
+    "title": "Isaac Sim for Humanoid Robotics"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Introduction to NVIDIA Isaac",
+    "permalink": "/docs/module3/introduction"
+  },
+  "next": {
+    "title": "Isaac ROS Integration",
+    "permalink": "/docs/module3/isaac-ros"
+  }
+}

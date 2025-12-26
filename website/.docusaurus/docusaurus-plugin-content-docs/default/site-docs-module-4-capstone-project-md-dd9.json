@@ -1,0 +1,24 @@
+{
+  "id": "module4/capstone-project",
+  "title": "Capstone Project - Complete Humanoid Robot System",
+  "description": "The capstone project integrates all the concepts learned throughout this course to build a complete humanoid robot system. This project demonstrates how ROS 2, Gazebo/Unity, NVIDIA Isaac, Visual SLAM, Navigation 2, Vision-Language-Action systems, and LLM-based planning work together to create an intelligent, autonomous humanoid robot.",
+  "source": "@site/docs/module4/capstone-project.md",
+  "sourceDirName": "module4",
+  "slug": "/module4/capstone-project",
+  "permalink": "/docs/module4/capstone-project",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/your-username/physical-ai-book/edit/main/docs/module4/capstone-project.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4,
+    "title": "Capstone Project - Complete Humanoid Robot System"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "LLM-Based Task Planning for Humanoid Robots",
+    "permalink": "/docs/module4/llm-planning"
+  }
+}

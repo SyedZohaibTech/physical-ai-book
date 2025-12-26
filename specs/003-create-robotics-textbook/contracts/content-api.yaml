@@ -1,0 +1,540 @@
+openapi: 3.0.0
+info:
+  title: Physical AI & Humanoid Robotics Textbook API
+  description: API for accessing and managing textbook content
+  version: 1.0.0
+  contact:
+    name: Textbook Development Team
+    email: textbook@physical-ai-book.org
+
+servers:
+  - url: https://physical-ai-book.github.io/api/v1
+    description: Production server
+
+paths:
+  /textbook:
+    get:
+      summary: Get textbook metadata
+      description: Retrieve information about the textbook including title, version, and modules
+      responses:
+        '200':
+          description: Textbook metadata
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Textbook'
+        '404':
+          description: Textbook not found
+
+  /modules:
+    get:
+      summary: List all modules
+      description: Retrieve a list of all available modules in the textbook
+      responses:
+        '200':
+          description: List of modules
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Module'
+        '404':
+          description: No modules found
+
+  /modules/{moduleId}:
+    get:
+      summary: Get module details
+      description: Retrieve detailed information about a specific module
+      parameters:
+        - name: moduleId
+          in: path
+          required: true
+          schema:
+            type: string
+          description: ID of the module to retrieve
+      responses:
+        '200':
+          description: Module details
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Module'
+        '404':
+          description: Module not found
+
+  /modules/{moduleId}/chapters:
+    get:
+      summary: List chapters in a module
+      description: Retrieve a list of all chapters in a specific module
+      parameters:
+        - name: moduleId
+          in: path
+          required: true
+          schema:
+            type: string
+          description: ID of the module
+      responses:
+        '200':
+          description: List of chapters
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Chapter'
+        '404':
+          description: Module not found
+
+  /chapters/{chapterId}:
+    get:
+      summary: Get chapter content
+      description: Retrieve detailed information about a specific chapter including content, code examples, diagrams, and exercises
+      parameters:
+        - name: chapterId
+          in: path
+          required: true
+          schema:
+            type: string
+          description: ID of the chapter to retrieve
+      responses:
+        '200':
+          description: Chapter details
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Chapter'
+        '404':
+          description: Chapter not found
+
+  /capstone-project:
+    get:
+      summary: Get capstone project details
+      description: Retrieve detailed information about the capstone project
+      responses:
+        '200':
+          description: Capstone project details
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CapstoneProject'
+        '404':
+          description: Capstone project not found
+
+  /search:
+    get:
+      summary: Search textbook content
+      description: Search across all textbook content for specific terms
+      parameters:
+        - name: q
+          in: query
+          required: true
+          schema:
+            type: string
+          description: Search query
+        - name: limit
+          in: query
+          schema:
+            type: integer
+            default: 10
+          description: Maximum number of results to return
+      responses:
+        '200':
+          description: Search results
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  results:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/SearchResult'
+                  total:
+                    type: integer
+        '400':
+          description: Invalid search query
+
+components:
+  schemas:
+    Textbook:
+      type: object
+      required:
+        - id
+        - title
+        - version
+        - modules
+      properties:
+        id:
+          type: string
+          description: Unique identifier for the textbook
+          example: "physical-ai-humanoid-robotics"
+        title:
+          type: string
+          description: Title of the textbook
+          example: "Physical AI & Humanoid Robotics"
+        version:
+          type: string
+          description: Version of the textbook
+          example: "1.0.0"
+        description:
+          type: string
+          description: Brief description of the textbook
+          example: "A comprehensive guide to Physical AI and Humanoid Robotics"
+        modules:
+          type: array
+          items:
+            $ref: '#/components/schemas/Module'
+        authors:
+          type: array
+          items:
+            type: string
+          description: Authors of the textbook
+          example: ["Dr. Robotics", "Prof. AI"]
+        publication_date:
+          type: string
+          format: date
+          description: Date of publication
+          example: "2025-01-15"
+        prerequisites:
+          type: array
+          items:
+            type: string
+          description: Prerequisites for the textbook
+          example: ["Basic programming", "Calculus", "Physics"]
+
+    Module:
+      type: object
+      required:
+        - id
+        - title
+        - chapters
+      properties:
+        id:
+          type: string
+          description: Unique identifier for the module
+          example: "module-1-ros2"
+        title:
+          type: string
+          description: Title of the module
+          example: "The Robotic Nervous System (ROS 2)"
+        description:
+          type: string
+          description: Brief description of the module
+          example: "Learn the fundamentals of ROS 2 for robot communication and control"
+        chapters:
+          type: array
+          items:
+            $ref: '#/components/schemas/Chapter'
+        learning_objectives:
+          type: array
+          items:
+            type: string
+          description: What students will learn in this module
+          example: ["Understand ROS 2 architecture", "Create nodes and topics", "Implement services"]
+        prerequisites:
+          type: array
+          items:
+            type: string
+          description: Prerequisites for this module
+          example: ["Basic programming", "Understanding of robotics"]
+        estimated_duration:
+          type: string
+          description: Estimated time to complete the module
+          example: "40 hours"
+        difficulty_level:
+          type: string
+          enum: [beginner, intermediate, advanced]
+          description: Difficulty level of the module
+          example: "intermediate"
+
+    Chapter:
+      type: object
+      required:
+        - id
+        - title
+        - content
+      properties:
+        id:
+          type: string
+          description: Unique identifier for the chapter
+          example: "module-1-chapter-3"
+        title:
+          type: string
+          description: Title of the chapter
+          example: "ROS 2 Nodes and Communication"
+        content:
+          type: string
+          description: The actual content of the chapter in MDX format
+          example: "# ROS 2 Nodes\n\nIn ROS 2, a node is an executable that uses ROS..."
+        module_id:
+          type: string
+          description: Reference to the parent module
+          example: "module-1-ros2"
+        objectives:
+          type: array
+          items:
+            type: string
+          description: Learning objectives for this chapter
+          example: ["Understand what a ROS 2 node is", "Create a simple publisher node", "Create a simple subscriber node"]
+        prerequisites:
+          type: array
+          items:
+            type: string
+          description: Prerequisites for this chapter
+          example: ["Basic programming", "Module 1 introduction"]
+        code_examples:
+          type: array
+          items:
+            $ref: '#/components/schemas/CodeExample'
+        diagrams:
+          type: array
+          items:
+            $ref: '#/components/schemas/Diagram'
+        exercises:
+          type: array
+          items:
+            $ref: '#/components/schemas/Exercise'
+        duration:
+          type: string
+          description: Estimated time to complete the chapter
+          example: "3 hours"
+        keywords:
+          type: array
+          items:
+            type: string
+          description: Important terms covered in the chapter
+          example: ["node", "publisher", "subscriber", "topic"]
+
+    CodeExample:
+      type: object
+      required:
+        - id
+        - title
+        - language
+        - code
+      properties:
+        id:
+          type: string
+          description: Unique identifier for the code example
+          example: "code-example-1-3-1"
+        title:
+          type: string
+          description: Title of the code example
+          example: "Simple Publisher Node"
+        language:
+          type: string
+          description: Programming language of the code
+          example: "python"
+        code:
+          type: string
+          description: The actual code
+          example: "import rclpy\nfrom std_msgs.msg import String\n\n# Publisher node code..."
+        explanation:
+          type: string
+          description: Explanation of what the code does
+          example: "This code creates a simple publisher that sends messages to a topic"
+        chapter_id:
+          type: string
+          description: Reference to the parent chapter
+          example: "module-1-chapter-3"
+        dependencies:
+          type: array
+          items:
+            type: string
+          description: Required libraries/packages
+          example: ["rclpy", "std_msgs"]
+
+    Diagram:
+      type: object
+      required:
+        - id
+        - title
+        - source
+      properties:
+        id:
+          type: string
+          description: Unique identifier for the diagram
+          example: "diagram-1-3-1"
+        title:
+          type: string
+          description: Title of the diagram
+          example: "ROS 2 Node Communication Architecture"
+        type:
+          type: string
+          enum: [flowchart, architecture, process, sequence]
+          description: Type of diagram
+          example: "architecture"
+        description:
+          type: string
+          description: Explanation of the diagram
+          example: "Shows how nodes communicate through topics in ROS 2"
+        source:
+          type: string
+          description: File path to the diagram
+          example: "/static/images/ros2-architecture.png"
+        chapter_id:
+          type: string
+          description: Reference to the parent chapter
+          example: "module-1-chapter-3"
+
+    Exercise:
+      type: object
+      required:
+        - id
+        - title
+        - description
+      properties:
+        id:
+          type: string
+          description: Unique identifier for the exercise
+          example: "exercise-1-3-1"
+        title:
+          type: string
+          description: Title of the exercise
+          example: "Create a Simple Publisher"
+        description:
+          type: string
+          description: Detailed instructions for the exercise
+          example: "Create a ROS 2 publisher node that publishes a message every second..."
+        type:
+          type: string
+          enum: [coding, theoretical, practical]
+          description: Type of exercise
+          example: "coding"
+        difficulty:
+          type: string
+          enum: [easy, medium, hard]
+          description: Difficulty level of the exercise
+          example: "medium"
+        chapter_id:
+          type: string
+          description: Reference to the parent chapter
+          example: "module-1-chapter-3"
+        solution:
+          type: string
+          description: Solution or hints for the exercise
+          example: "Use the publisher example in the chapter as a starting point..."
+        estimated_time:
+          type: string
+          description: Estimated time to complete the exercise
+          example: "45 minutes"
+
+    CapstoneProject:
+      type: object
+      required:
+        - id
+        - title
+        - description
+        - phases
+      properties:
+        id:
+          type: string
+          description: Unique identifier for the capstone project
+          example: "capstone-autonomous-humanoid"
+        title:
+          type: string
+          description: Title of the capstone project
+          example: "The Autonomous Humanoid Robot"
+        description:
+          type: string
+          description: Overview of the capstone project
+          example: "Build a complete autonomous humanoid robot that can navigate, perceive, and interact with its environment"
+        objectives:
+          type: array
+          items:
+            type: string
+          description: What students will achieve with the project
+          example: ["Integrate all concepts from the textbook", "Build a functional humanoid robot simulation", "Implement AI for navigation and interaction"]
+        requirements:
+          type: array
+          items:
+            type: string
+          description: Technical requirements for the project
+          example: ["ROS 2 Humble", "Gazebo simulation", "Isaac Sim"]
+        phases:
+          type: array
+          items:
+            $ref: '#/components/schemas/ProjectPhase'
+        evaluation_criteria:
+          type: array
+          items:
+            type: string
+          description: How the project will be assessed
+          example: ["Functionality", "Code quality", "Documentation", "Innovation"]
+        resources:
+          type: array
+          items:
+            type: string
+          description: Additional materials needed
+          example: ["URDF models", "Simulation environments", "AI models"]
+
+    ProjectPhase:
+      type: object
+      required:
+        - id
+        - title
+        - description
+      properties:
+        id:
+          type: string
+          description: Unique identifier for the project phase
+          example: "phase-1-design"
+        title:
+          type: string
+          description: Title of the project phase
+          example: "Design Phase"
+        description:
+          type: string
+          description: What to do in this phase
+          example: "Design the architecture of your humanoid robot, including sensors, actuators, and control systems"
+        deliverables:
+          type: array
+          items:
+            type: string
+          description: What needs to be completed in this phase
+          example: ["System architecture diagram", "Component specifications", "Development plan"]
+        capstone_project_id:
+          type: string
+          description: Reference to the parent capstone project
+          example: "capstone-autonomous-humanoid"
+        estimated_duration:
+          type: string
+          description: Estimated time to complete this phase
+          example: "2 weeks"
+
+    SearchResult:
+      type: object
+      required:
+        - id
+        - title
+        - type
+        - content_preview
+        - url
+      properties:
+        id:
+          type: string
+          description: Unique identifier for the search result
+          example: "search-result-1"
+        title:
+          type: string
+          description: Title of the matching content
+          example: "ROS 2 Nodes and Communication"
+        type:
+          type: string
+          enum: [chapter, module, exercise, diagram, code_example]
+          description: Type of content
+          example: "chapter"
+        content_preview:
+          type: string
+          description: Preview of the matching content
+          example: "In ROS 2, a node is an executable that uses ROS to communicate with other..."
+        url:
+          type: string
+          description: URL to access the full content
+          example: "/docs/module-1-ros2/chapter-3"
+        relevance:
+          type: number
+          format: float
+          description: Relevance score of the result
+          example: 0.95

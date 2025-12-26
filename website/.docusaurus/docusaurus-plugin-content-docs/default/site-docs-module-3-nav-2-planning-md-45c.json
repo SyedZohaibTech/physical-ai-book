@@ -1,0 +1,28 @@
+{
+  "id": "module3/nav2-planning",
+  "title": "Navigation 2 (Nav2) for Humanoid Robots",
+  "description": "Navigation 2 (Nav2) is the latest navigation stack for ROS 2, designed to provide robust, reliable, and efficient navigation for mobile robots. For humanoid robots, Nav2 provides the essential capabilities needed to navigate complex, human-centric environments safely and efficiently.",
+  "source": "@site/docs/module3/nav2-planning.md",
+  "sourceDirName": "module3",
+  "slug": "/module3/nav2-planning",
+  "permalink": "/docs/module3/nav2-planning",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/your-username/physical-ai-book/edit/main/docs/module3/nav2-planning.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5,
+    "title": "Navigation 2 (Nav2) for Humanoid Robots"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Visual SLAM for Humanoid Navigation",
+    "permalink": "/docs/module3/visual-slam"
+  },
+  "next": {
+    "title": "Introduction to Vision-Language-Action Systems",
+    "permalink": "/docs/module4/introduction"
+  }
+}

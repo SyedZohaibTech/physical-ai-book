@@ -1,0 +1,28 @@
+{
+  "id": "module2/sensor-simulation",
+  "title": "Sensor Simulation for Humanoid Robots",
+  "description": "Sensor simulation is critical for humanoid robotics, as these robots rely on diverse sensors to perceive their environment, maintain balance, and execute complex tasks. This chapter covers the simulation of various sensor types essential for humanoid robot operation.",
+  "source": "@site/docs/module2/sensor-simulation.md",
+  "sourceDirName": "module2",
+  "slug": "/module2/sensor-simulation",
+  "permalink": "/docs/module2/sensor-simulation",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/your-username/physical-ai-book/edit/main/docs/module2/sensor-simulation.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5,
+    "title": "Sensor Simulation for Humanoid Robots"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Unity Rendering for Humanoid Perception",
+    "permalink": "/docs/module2/unity-rendering"
+  },
+  "next": {
+    "title": "Introduction to NVIDIA Isaac",
+    "permalink": "/docs/module3/introduction"
+  }
+}

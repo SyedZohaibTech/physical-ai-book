@@ -1,0 +1,28 @@
+{
+  "id": "module2/introduction",
+  "title": "Introduction to Gazebo & Unity Digital Twin",
+  "description": "Digital twins are virtual replicas of physical systems that enable testing, validation, and optimization of robotic systems in a safe, controlled environment. In humanoid robotics, digital twins are essential for developing complex behaviors without risking expensive hardware or human safety.",
+  "source": "@site/docs/module2/introduction.md",
+  "sourceDirName": "module2",
+  "slug": "/module2/introduction",
+  "permalink": "/docs/module2/introduction",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/your-username/physical-ai-book/edit/main/docs/module2/introduction.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "title": "Introduction to Gazebo & Unity Digital Twin"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "URDF for Humanoid Robots",
+    "permalink": "/docs/module1/urdf-humanoids"
+  },
+  "next": {
+    "title": "Gazebo Environment Setup and Configuration",
+    "permalink": "/docs/module2/gazebo-environment"
+  }
+}

@@ -1,43 +1,55 @@
-# Implementation Plan: Physical AI & Humanoid Robotics Textbook Generation
+# Implementation Plan: Physical AI & Humanoid Robotics Textbook
 
-**Branch**: `003-create-robotics-textbook` | **Date**: 2025-12-23 | **Spec**: /specs/003-create-robotics-textbook/spec.md
-**Input**: Feature specification from `/specs/[###-feature-name]/spec.md`
+**Branch**: `003-create-robotics-textbook` | **Date**: 2025-12-24 | **Spec**: [link to spec.md]
+**Input**: Feature specification from `/specs/003-create-robotics-textbook/spec.md`
 
 **Note**: This template is filled in by the `/sp.plan` command. See `.specify/templates/commands/plan.md` for the execution workflow.
 
 ## Summary
 
-This plan outlines the generation of a comprehensive, publish-ready Docusaurus textbook titled "Physical AI & Humanoid Robotics". The textbook will educate students on AI systems operating in the physical world through simulation, perception, humanoid control, physical laws, and Vision-Language-Action robotics. The technical approach involves leveraging Docusaurus for structured documentation, integrating diverse robotics concepts (ROS 2, Gazebo, Unity, NVIDIA Isaac, VLA), and generating modular content including chapters, examples, illustrations, and exercises.
+This implementation plan outlines the development of a comprehensive Docusaurus-powered textbook titled "Physical AI & Humanoid Robotics". The project will create educational content covering ROS 2, Gazebo simulation, Unity digital twins, NVIDIA Isaac AI systems, and Vision-Language-Action robotics.
+
+The approach involves structuring content into 7 major modules with 30+ chapters, each containing theory, practical examples, code snippets, diagrams, and exercises. The content will be developed as MD/MDX files organized by modules, with a focus on progressive learning from foundational concepts to advanced applications.
+
+Key technical decisions include using Docusaurus for static site generation, implementing a clear content model with modules, chapters, code examples, diagrams, and exercises, and ensuring the textbook is deployable to GitHub Pages. The project emphasizes educational best practices, accessibility, and industry-standard tools like ROS 2, Gazebo, and NVIDIA Isaac.
 
 ## Technical Context
 
-<!--
-  ACTION REQUIRED: Replace the content in this section with the technical details
-  for the project. The structure here is presented in advisory capacity to guide
-  the iteration process.
--->
-
-**Language/Version**: Python 3.11+ (for content generation/scripts), Node.js 18+ (for Docusaurus)
-**Primary Dependencies**: Docusaurus, ROS 2 (rclpy), Gazebo, Unity (conceptual), NVIDIA Isaac Sim/ROS (conceptual)
-**Storage**: Local filesystem (for .mdx/.md content files), Git (for version control)
-**Testing**: Docusaurus build validation, link checks, content accuracy/completeness review
-**Target Platform**: Web (static site deployable to GitHub Pages)
-**Project Type**: Static documentation website (Docusaurus)
-**Performance Goals**: Docusaurus build time < 5 minutes (local), fast page load times (< 2s p95)
-**Constraints**: Adherence to Docusaurus content/structure guidelines, GitHub Pages limits, consistent academic tone
-**Scale/Scope**: 4-5 modules, each with 5-7 chapters, including exercises, code examples, and diagrams; one detailed Capstone Project
+**Language/Version**: Markdown/MDX, JavaScript/TypeScript (Node.js 18+), Docusaurus 2.4+
+**Primary Dependencies**: Docusaurus, React, Node.js, npm/yarn, Git
+**Storage**: File-based (Markdown/MDX documents in docs/ directory), Git repository
+**Testing**: Manual review of generated content, Docusaurus build process validation
+**Target Platform**: Web-based (GitHub Pages), cross-platform compatibility
+**Project Type**: Static site generation (documentation website)
+**Performance Goals**: Fast build times (< 30 seconds), responsive page loading (< 2 seconds), SEO-optimized output
+**Constraints**: Content must be educational and accurate, diagrams should be clear and illustrative, code examples must be syntactically correct
+**Scale/Scope**: 7 major modules, 30+ chapters, 1 capstone project, glossary, appendix, practice labs
 
 ## Constitution Check
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-- **I. Follow the Spec**: PASS. The plan strictly adheres to the structure and content requirements defined in the feature specification.
-- **II. Write Like a Professional Textbook Author**: PASS. Content generation will be guided by the specified tone (clear, modern, academic, beginner-friendly) and format (headings, bullet points, ASCII diagrams, code blocks).
-- **III. Output Docusaurus-Ready Files**: PASS. All generated output will be Docusaurus-compatible `.mdx` or `.md` files with correct front-matter and directory structure for GitHub Pages deployment (FR-001, FR-002, FR-003).
-- **IV. Be Useful for Book Creation**: PASS. The plan is entirely focused on generating the required textbook content and artifacts.
-- **V. Focus Deeply on Physical AI**: PASS. The content for each module is explicitly focused on the specified Physical AI and Humanoid Robotics topics.
-- **VI. Break Complex Topics into Subsections**: PASS. The book blueprint defines modules and chapters, ensuring complex topics are broken into digestible sections.
-- **VII. Avoid Hallucinations**: PASS. Content generation will prioritize real robotics terms, ROS 2 APIs, Isaac features, and Gazebo physics.
+**Principle 1 (Library-First)**: NOT APPLICABLE - This is a documentation project, not a library
+**Principle 2 (CLI Interface)**: PARTIALLY APPLICABLE - Docusaurus has CLI tools for creating, building, and serving
+**Principle 3 (Test-First)**: MODIFIED - Content accuracy will be validated through review process rather than automated tests
+**Principle 4 (Integration Testing)**: NOT APPLICABLE - This is static content generation
+**Principle 5 (Observability)**: APPLICABLE - Generated site will have proper SEO, analytics, and accessibility features
+**Principle 6**: APPLICABLE - Following documentation best practices and educational standards
+
+**Gates Status**: PASS - All applicable principles are satisfied or appropriately modified for documentation project
+
+## Post-Design Constitution Check
+
+After completing the design phase, we confirm that the implementation still adheres to the constitutional principles:
+
+**Principle 1 (Library-First)**: REMAINS NOT APPLICABLE - This remains a documentation project, not a library
+**Principle 2 (CLI Interface)**: REMAINS PARTIALLY APPLICABLE - Docusaurus CLI tools will be used for development workflow
+**Principle 3 (Test-First)**: REMAINS MODIFIED - Content will be validated through review process rather than automated tests
+**Principle 4 (Integration Testing)**: REMAINS NOT APPLICABLE - This is static content generation
+**Principle 5 (Observability)**: REMAINS APPLICABLE - The site will include SEO, analytics, and accessibility features
+**Principle 6**: REMAINS APPLICABLE - Following documentation best practices and educational standards
+
+**Post-Design Gates Status**: PASS - All applicable principles continue to be satisfied after design completion
 
 ## Project Structure
 
@@ -54,51 +66,25 @@ specs/[###-feature]/
 ```
 
 ### Source Code (repository root)
-<!--
-  ACTION REQUIRED: Replace the placeholder tree below with the concrete layout
-  for this feature. Delete unused options and expand the chosen structure with
-  real paths (e.g., apps/admin, packages/something). The delivered plan must
-  not include Option labels.
--->
-
-```text
-# [REMOVE IF UNUSED] Option 1: Single project (DEFAULT)
-src/
-├── models/
-├── services/
-├── cli/
-└── lib/
-
-tests/
-├── contract/
-├── integration/
-└── unit/
-
-# [REMOVE IF UNUSED] Option 2: Web application (when "frontend" + "backend" detected)
-backend/
+website/
+├── docs/                # Textbook content (MD/MDX files organized by modules)
+│   ├── intro/
+│   ├── module-1-ros2/
+│   ├── module-2-digital-twin/
+│   ├── module-3-isaac/
+│   ├── module-4-vla/
+│   ├── capstone-project/
+│   ├── appendix/
+│   ├── glossary/
+│   └── practice-labs/
 ├── src/
-│   ├── models/
-│   ├── services/
-│   └── api/
-└── tests/
-
-frontend/
-├── src/
-│   ├── components/
-│   ├── pages/
-│   └── services/
-└── tests/
-
-# [REMOVE IF UNUSED] Option 3: Mobile + API (when "iOS/Android" detected)
-api/
-└── [same as backend above]
-
-ios/ or android/
-└── [platform-specific structure: feature modules, UI flows, platform tests]
-```
-
-**Structure Decision**: [Document the selected structure and reference the real
-directories captured above]
+│   ├── components/      # Custom React components for textbook
+│   └── pages/           # Additional pages beyond docs
+├── static/              # Static assets (images, diagrams, code samples)
+├── docusaurus.config.js # Docusaurus configuration
+├── sidebars.js          # Navigation sidebar configuration
+├── package.json         # Project dependencies and scripts
+└── README.md            # Project overview
 
 ## Complexity Tracking
 

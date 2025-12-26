@@ -1,0 +1,28 @@
+{
+  "id": "module1/ros2-setup",
+  "title": "ROS 2 Setup and Installation",
+  "description": "This chapter guides you through setting up ROS 2 on Ubuntu 22.04 LTS, which is the recommended platform for robotics development.",
+  "source": "@site/docs/module1/ros2-setup.md",
+  "sourceDirName": "module1",
+  "slug": "/module1/ros2-setup",
+  "permalink": "/docs/module1/ros2-setup",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/your-username/physical-ai-book/edit/main/docs/module1/ros2-setup.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2,
+    "title": "ROS 2 Setup and Installation"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Introduction to ROS 2",
+    "permalink": "/docs/module1/introduction"
+  },
+  "next": {
+    "title": "Nodes, Topics, and Services",
+    "permalink": "/docs/module1/nodes-topics-services"
+  }
+}

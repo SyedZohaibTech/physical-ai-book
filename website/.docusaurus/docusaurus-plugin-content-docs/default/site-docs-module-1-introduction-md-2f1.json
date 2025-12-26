@@ -1,0 +1,28 @@
+{
+  "id": "module1/introduction",
+  "title": "Introduction to ROS 2",
+  "description": "ROS 2 (Robot Operating System 2) is the next generation of the most widely used middleware for robotics development. It provides a structured communication layer above the host operating systems of a heterogenous compute cluster, enabling distributed computing for robotic applications.",
+  "source": "@site/docs/module1/introduction.md",
+  "sourceDirName": "module1",
+  "slug": "/module1/introduction",
+  "permalink": "/docs/module1/introduction",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/your-username/physical-ai-book/edit/main/docs/module1/introduction.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "title": "Introduction to ROS 2"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Introduction",
+    "permalink": "/docs/intro"
+  },
+  "next": {
+    "title": "ROS 2 Setup and Installation",
+    "permalink": "/docs/module1/ros2-setup"
+  }
+}

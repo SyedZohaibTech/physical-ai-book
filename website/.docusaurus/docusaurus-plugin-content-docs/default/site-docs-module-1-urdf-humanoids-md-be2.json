@@ -1,0 +1,28 @@
+{
+  "id": "module1/urdf-humanoids",
+  "title": "URDF for Humanoid Robots",
+  "description": "URDF (Unified Robot Description Format) is an XML format for representing a robot model. For humanoid robots, URDF describes the kinematic and dynamic properties of the robot's body structure.",
+  "source": "@site/docs/module1/urdf-humanoids.md",
+  "sourceDirName": "module1",
+  "slug": "/module1/urdf-humanoids",
+  "permalink": "/docs/module1/urdf-humanoids",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/your-username/physical-ai-book/edit/main/docs/module1/urdf-humanoids.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5,
+    "title": "URDF for Humanoid Robots"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Python Integration with rclpy",
+    "permalink": "/docs/module1/python-rclpy"
+  },
+  "next": {
+    "title": "Introduction to Gazebo & Unity Digital Twin",
+    "permalink": "/docs/module2/introduction"
+  }
+}

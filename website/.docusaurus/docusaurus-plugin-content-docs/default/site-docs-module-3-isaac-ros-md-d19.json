@@ -1,0 +1,28 @@
+{
+  "id": "module3/isaac-ros",
+  "title": "Isaac ROS Integration",
+  "description": "Isaac ROS is a collection of hardware-accelerated packages that bring the power of NVIDIA GPUs to the ROS/ROS 2 ecosystem. These packages provide optimized implementations of common robotic algorithms, enabling real-time processing of complex sensor data and decision-making for humanoid robots.",
+  "source": "@site/docs/module3/isaac-ros.md",
+  "sourceDirName": "module3",
+  "slug": "/module3/isaac-ros",
+  "permalink": "/docs/module3/isaac-ros",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/your-username/physical-ai-book/edit/main/docs/module3/isaac-ros.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3,
+    "title": "Isaac ROS Integration"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Isaac Sim for Humanoid Robotics",
+    "permalink": "/docs/module3/isaac-sim"
+  },
+  "next": {
+    "title": "Visual SLAM for Humanoid Navigation",
+    "permalink": "/docs/module3/visual-slam"
+  }
+}

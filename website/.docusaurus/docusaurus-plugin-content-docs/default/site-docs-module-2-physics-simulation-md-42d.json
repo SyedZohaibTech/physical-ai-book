@@ -1,0 +1,28 @@
+{
+  "id": "module2/physics-simulation",
+  "title": "Physics Simulation for Humanoid Robots",
+  "description": "Physics simulation is the cornerstone of realistic humanoid robot simulation. Accurate physics modeling enables the development of stable locomotion, manipulation, and interaction behaviors that can transfer from simulation to the real world.",
+  "source": "@site/docs/module2/physics-simulation.md",
+  "sourceDirName": "module2",
+  "slug": "/module2/physics-simulation",
+  "permalink": "/docs/module2/physics-simulation",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/your-username/physical-ai-book/edit/main/docs/module2/physics-simulation.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3,
+    "title": "Physics Simulation for Humanoid Robots"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Gazebo Environment Setup and Configuration",
+    "permalink": "/docs/module2/gazebo-environment"
+  },
+  "next": {
+    "title": "Unity Rendering for Humanoid Perception",
+    "permalink": "/docs/module2/unity-rendering"
+  }
+}

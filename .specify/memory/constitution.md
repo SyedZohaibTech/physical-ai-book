@@ -1,73 +1,88 @@
 <!--
 Sync Impact Report:
-- Version change: 0.0.0 → 1.0.0
-- List of modified principles: Complete overhaul
-- Added sections: Core Principles, Project Mandates, Governance
-- Removed sections: All previous placeholders
+- Version change: 1.0.0 → 2.0.0 (MAJOR: Complete project shift from landing page to RAG chatbot)
+- Modified principles: All principles updated for RAG chatbot project
+- Added sections: RAG Architecture, Text Selection Feature, Performance Requirements
+- Removed sections: Landing page specific principles
 - Templates requiring updates:
-  - ⚠ pending: .specify/templates/plan-template.md
-  - ⚠ pending: .specify/templates/spec-template.md
-  - ⚠ pending: .specify/templates/tasks-template.md
+  - .specify/templates/plan-template.md: ✅ updated
+  - .specify/templates/spec-template.md: ✅ updated
+  - .specify/templates/tasks-template.md: ✅ updated
+  - .specify/templates/commands/*.md: N/A (no command templates found)
 - Follow-up TODOs: None
 -->
-# Physical AI & Humanoid Robotics — Bridging the Digital Brain and the Physical Body
-
-As an AI-Native Textbook Author, your primary responsibility is to generate a complete, publish-ready textbook using Docusaurus. Always produce content that is modular, structured, version-controlled, and ready for GitHub Pages deployment.
+# Interactive RAG Chatbot for Physical AI Textbook Constitution
 
 ## Core Principles
 
-### I. Follow the Spec
-Every chapter, module, heading, exercise, example, and diagram must follow the User Specification provided.
+### I. RAG Architecture-First
+The chatbot must implement Retrieval-Augmented Generation (RAG) architecture, retrieving relevant content from vector database before generating answers with LLM. This ensures all responses are grounded in the textbook content rather than hallucinated.
 
-### II. Write Like a Professional Textbook Author
-- **Tone**: clear, modern, academic, beginner-friendly
-- **Format**: headings, bullet points, diagrams (ASCII), tables, code blocks
-- **Language**: simple English (but precise engineering vocabulary)
+### II. Dual Mode Functionality
+The system must support two distinct interaction modes: General Q&A (searching entire book) and Text Selection Q&A (answering specific questions about selected passages). Both modes must provide accurate, contextually relevant responses.
 
-### III. Output Docusaurus-Ready Files
-Every output MUST be a `.mdx` or `.md` file, include front-matter, use Docusaurus formatting, and be GitHub Pages compatible. Do NOT include unrelated text.
+### III. Tech Stack Consistency
+Backend must use FastAPI with Python, vector database must be Qdrant Cloud, SQL database must be Neon Serverless Postgres, embeddings must use OpenAI text-embedding-3-small, and LLM responses must use OpenAI GPT-3.5-turbo via ChatKit SDK. Frontend must be React component integrated with Docusaurus.
 
-### IV. Be Useful for Book Creation
-When asked to “write chapter”, “make module”, “generate code”, “expand section”, or “revise”, always output the exact content file required.
+### IV. Embedded Experience
+The chatbot interface must be seamlessly embedded in the Docusaurus site as a floating button in the bottom-right corner that expands to a chat window. This ensures consistent user experience across all textbook pages without disrupting the reading flow.
 
-### V. Focus Deeply on Physical AI
-Explain topics such as:
-- How AI understands the physical world
-- Robotics control systems
-- Simulation fidelity vs reality
-- Human-robot interaction
-- Nav2, VSLAM, Isaac ROS
-- LLM → Action pipelines
-- Voice-to-Action robotics
-- Reinforcement learning for humanoids
+### V. Production-Ready Quality
+All components must include comprehensive error handling, loading states, API rate limiting, and proper logging. The system must gracefully handle failures and provide meaningful feedback to users when issues occur.
 
-### VI. Break Complex Topics into Subsections
-Each module should contain several chapters, and each chapter should contain small, digestible sections.
+### VI. Performance Optimization
+Response times must meet strict requirements: vector search under 500ms and LLM response under 3 seconds, resulting in total response time under 5 seconds. All components must be optimized for these performance targets.
 
-### VII. Avoid Hallucinations
-Use real robotics terms, real ROS 2 APIs, real Isaac features, and real Gazebo physics.
+## Additional Requirements
 
-## Project Mandates
+### Technical Requirements
+- Backend: FastAPI (Python) with async support for handling concurrent requests
+- Vector DB: Qdrant Cloud free tier for document embeddings and retrieval
+- SQL DB: Neon Serverless Postgres for session management and user data
+- Embeddings: OpenAI text-embedding-3-small for creating document vectors
+- LLM: OpenAI GPT-3.5-turbo via ChatKit SDK for answer generation
+- Frontend: React component integrated with Docusaurus documentation site
+- Integration: Floating chat button that appears on all textbook pages
+- Security: API rate limiting and authentication where appropriate
 
-### Quarter Outline
-Generate the textbook according to these four modules:
+### UI/UX Requirements
+- Clean, modern chat interface that matches textbook's visual design
+- Smooth animations for expanding/collapsing chat window
+- Clear visual indicators for loading states
+- Intuitive text selection interaction flow
+- Accessible design compliant with WCAG 2.1 AA standards
+- Mobile-responsive chat interface
 
-- **MODULE 1 — The Robotic Nervous System (ROS 2)**: Focus on robot middleware fundamentals, ROS 2 concepts, `rclpy` for joint control, URDF for modeling, and Python agents interacting with ROS.
-- **MODULE 2 — The Digital Twin (Gazebo & Unity)**: Focus on physics simulation, 3D environment building, HRI, sensor simulation, and using Unity/Gazebo.
-- **MODULE 3 — The AI-Robot Brain (NVIDIA Isaac™)**: Focus on Isaac Sim for synthetic data, Isaac ROS pipelines, VSLAM, Nav2, and bipedal locomotion.
-- **MODULE 4 — Vision-Language-Action (VLA)**: Focus on LLMs controlling robots, Whisper for voice, task decomposition, computer vision, and the final capstone project.
+### Content Requirements
+- Accurate retrieval of relevant textbook content based on user queries
+- Proper attribution of information sources to specific textbook sections
+- Ability to handle complex questions requiring multiple content pieces
+- Support for follow-up questions within conversation context
 
-### Capstone Project: The Autonomous Humanoid Assistant
-Generate a detailed project where students build a humanoid robot that:
-1. Receives a natural language command.
-2. Converts it into actions.
-3. Plans a path and navigates obstacles.
-4. Uses computer vision to detect an object.
-5. Picks and places the object correctly.
-6. Works in both simulation and (optional) real robot setups.
+## Development Workflow
+
+### Quality Gates
+- All components must pass performance benchmarks (response times under 5s)
+- Accuracy verification through content matching tests
+- Cross-browser compatibility testing (Chrome, Firefox, Safari, Edge)
+- Mobile responsiveness verification
+- Accessibility compliance checks (WCAG 2.1 AA standards)
+
+### Review Process
+- Architecture review focusing on RAG implementation before development
+- Performance audit to ensure response time requirements
+- Content accuracy verification comparing responses to textbook
+- User experience review for both chat modes
+- Security review for API endpoints and rate limiting
+
+### Deployment Policy
+- Vector database must be populated with complete textbook content
+- Performance metrics must meet established requirements
+- All chat functionality must be fully tested
+- Error handling verified under various failure conditions
 
 ## Governance
 
-This Constitution is the single source of truth for all development. Amendments require a documented proposal, review, and approval process. All work must comply with the principles herein.
+This constitution supersedes all other practices for the Interactive RAG Chatbot for Physical AI Textbook project. All PRs and reviews must verify compliance with these principles. Amendments require documentation of the change, approval from project stakeholders, and a migration plan if needed.
 
-**Version**: 1.0.0 | **Ratified**: 2025-12-20 | **Last Amended**: 2025-12-20
+**Version**: 2.0.0 | **Ratified**: 2025-12-24 | **Last Amended**: 2025-12-24

@@ -1,0 +1,28 @@
+{
+  "id": "module4/voice-to-action",
+  "title": "Voice-to-Action Systems for Humanoid Robots",
+  "description": "Voice-to-Action systems enable humanoid robots to understand spoken language and convert it into executable actions. This capability is crucial for natural human-robot interaction, allowing users to command robots using everyday language rather than specialized interfaces.",
+  "source": "@site/docs/module4/voice-to-action.md",
+  "sourceDirName": "module4",
+  "slug": "/module4/voice-to-action",
+  "permalink": "/docs/module4/voice-to-action",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/your-username/physical-ai-book/edit/main/docs/module4/voice-to-action.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2,
+    "title": "Voice-to-Action Systems for Humanoid Robots"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Introduction to Vision-Language-Action Systems",
+    "permalink": "/docs/module4/introduction"
+  },
+  "next": {
+    "title": "LLM-Based Task Planning for Humanoid Robots",
+    "permalink": "/docs/module4/llm-planning"
+  }
+}
