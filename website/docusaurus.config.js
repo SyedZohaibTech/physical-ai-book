@@ -14,13 +14,12 @@ const config = {
   organizationName: 'SyedZohaibTech',
   projectName: 'physical-ai-book',
 
-  // Updated to Docusaurus v4 style
+  // v3 style
+  onBrokenLinks: 'ignore',
+  onBrokenMarkdownLinks: 'ignore',
+
   markdown: {
     mermaid: true,
-    hooks: {
-      onBrokenLinks: 'ignore',
-      onBrokenMarkdownLinks: 'ignore',
-    },
   },
 
   presets: [
