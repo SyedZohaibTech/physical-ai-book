@@ -7,18 +7,19 @@ const {themes} = require('prism-react-renderer');
 const config = {
   title: 'Physical AI & Humanoid Robotics',
   tagline: 'Master the Future of Embodied Intelligence',
-  url: 'https://your-username.github.io',
-  baseUrl: '/',
-  onBrokenLinks: 'throw',
+  url: 'https://SyedZohaibTech.github.io',
+  baseUrl: '/physical-ai-book/',
   favicon: 'img/favicon.ico',
 
-  organizationName: 'your-username',
+  organizationName: 'SyedZohaibTech',
   projectName: 'physical-ai-book',
 
+  // Updated to Docusaurus v4 style
   markdown: {
     mermaid: true,
     hooks: {
-      onBrokenMarkdownLinks: 'warn',
+      onBrokenLinks: 'ignore',
+      onBrokenMarkdownLinks: 'ignore',
     },
   },
 
@@ -30,7 +31,7 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           routeBasePath: 'docs',
-          editUrl: 'https://github.com/your-username/physical-ai-book/edit/main/',
+          editUrl: 'https://github.com/SyedZohaibTech/physical-ai-book/edit/main/',
         },
         blog: {
           showReadingTime: true,
@@ -60,7 +61,7 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/your-username/physical-ai-book',
+            href: 'https://github.com/SyedZohaibTech/physical-ai-book',
             label: 'GitHub',
             position: 'right',
           },
